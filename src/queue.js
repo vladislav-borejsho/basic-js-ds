@@ -15,18 +15,18 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 class Queue {
   constructor() {
-    this.node = [];
+    this.list = []
   }
   getUnderlyingList() {
-    return this.node;
+    return this.list
   }
 
   enqueue(value) {
-    return this.node.push(value)
+    return this.list.push(value)
   }
 
   dequeue() {
-     return this.node.shift()
+    return this.list.shift()
   }
 }
 
